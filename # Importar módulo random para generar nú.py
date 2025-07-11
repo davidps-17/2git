@@ -51,19 +51,19 @@ def clasificar_notas():
     print ("\nClasificación de estudiantes:\n")
 
     # Mostrar reprobados
-    print ("🔴 Reprobados:")
+    print (" Reprobados:")
     for estudiante, nota in reprobados:
         print (f"{estudiante}, {nota}")
     print (f"Total: {len(reprobados)} alumnos\n")
 
     # Mostrar aprobados
-    print ("🟡 Aprobados:")
+    print (" Aprobados:")
     for estudiante, nota in aprobados:
         print (f"{estudiante}, {nota}")
     print (f"Total: {len(aprobados)} alumnos\n")
 
     # Mostrar destacados
-    print ("🟢 Destacados:")
+    print (" Destacados:")
     for estudiante, nota in destacados:
         print (f"{estudiante}, {nota}")
     print (f"Total: {len(destacados)} alumnos\n")
@@ -87,10 +87,10 @@ def ver_estadisticas():
     promedio = int((suma_notas / cantidad_estudiantes) * 10) / 10
 
     # Mostrar estadísticas
-    print("📈 Estadísticas generales:\n")
-    print(f"🟢 Nota más alta: {nota_mas_alta} (Alumno: {mejor})")
-    print(f"🔴 Nota más baja: {nota_mas_baja} (Alumno: {peor})")
-    print(f"📘 Promedio del curso: {promedio}")
+    print(" Estadísticas generales:\n")
+    print(f" Nota más alta: {nota_mas_alta} (Alumno: {mejor})")
+    print(f" Nota más baja: {nota_mas_baja} (Alumno: {peor})")
+    print(f" Promedio del curso: {promedio}")
 
 # Función para guardar las notas en un archivo de texto
 def guardar_archivo():
@@ -109,7 +109,7 @@ def guardar_archivo():
     archivo.close()
 
     # Mensaje de éxito
-    print("✅ Archivo 'notas.txt' creado correctamente.")
+    print(" Archivo 'notas.txt' creado correctamente.")
 
 # Función principal con menú
 def menu():
@@ -152,16 +152,16 @@ def menu():
             if notas_asignadas:
                 guardar_archivo()
             else:
-                print("⚠️ Primero debes asignar las notas.")
+                print(" Primero debes asignar las notas.")
 
         # Opción 5: Salir
         elif opcion == "5":
-            print("\n👋 Gracias por usar el sistema. ¡Hasta pronto!")
+            print("\n Gracias por usar el sistema. ¡Hasta pronto!")
             salir = True
 
         # Si el usuario ingresa una opción no válida
         else:
-            print("❌ Opción inválida. Intente nuevamente.")
+            print(" Opción inválida. Intente nuevamente.")
 
 # Ejecutar el programa llamando al menú
 menu()
